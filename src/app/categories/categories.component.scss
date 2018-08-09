@@ -1,0 +1,114 @@
+.container {
+  margin-top: 2rem;
+  table {
+    background-color: #fff;
+    box-shadow: 0 1px 3px 0 rgba(10, 54, 69, 0.16);
+    thead {
+      position: relative;
+      box-shadow: 0 1px 3px 0 rgba(10, 54, 69, 0.16);
+      .add-category {
+        color: #06b4de;
+        position: absolute;
+        right: 0;
+        font-size: 10px;
+        font-weight: bold;
+      }
+      tr {
+        th {
+          border-top: none;
+          font-weight: bold;
+          color: #7a8a90;
+          font-size: 9px;
+          letter-spacing: 1px;
+          vertical-align: bottom;
+          padding-bottom: .3rem;
+        }
+      }
+    }
+    tbody {
+      tr {
+        .sort-cell {
+          width: 10%;
+        }
+        th {
+          padding: 0 0 .4rem 1.2rem;
+          button {
+            padding: 0;
+            margin: 0;
+          }
+          img {
+            height: 10px;
+            width: 11px;
+          }
+        }
+        td {
+          vertical-align: center !important;
+          img {
+            height: 27px;
+            width: 27px;
+          }
+        }
+        .seq {
+          margin-top: 1rem;
+          padding: 0;
+          background-color: #98cb65;
+          border-radius: 5px;
+          width: 24px;
+          height: 24px;
+          line-height: 1.4rem;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 991.98px) {
+  .w-md-100 {
+    width: 80%;
+    font-size: 12px;
+  }
+  .text-right {
+    padding: 0;
+  }
+}
+
+.text-save {
+  color: #06b4de;
+}
+
+.gu-mirror {
+  position: fixed !important;
+  margin: 0 !important;
+  z-index: 9999 !important;
+  opacity: 0.8;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+  filter: alpha(opacity=80);
+  pointer-events: none;
+  cursor: pointer;
+  transform: scale(.95);
+  border: 1px solid rgba(0, 0, 0, .2);
+}
+
+/* high-performance display:none; helper */
+
+.gu-hide {
+  left: -9999px !important;
+}
+
+/* added to mirrorContainer (default = body) while dragging */
+
+.gu-unselectable {
+  -webkit-user-select: none !important;
+  -moz-user-select: none !important;
+  -ms-user-select: none !important;
+  user-select: none !important;
+}
+
+/* added to the source element while its mirror is dragged */
+
+.gu-transit {
+  opacity: 0.2;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=20)";
+  filter: alpha(opacity=20);
+  border-bottom: 1px solid #000;
+}

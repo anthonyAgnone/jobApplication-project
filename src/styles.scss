@@ -1,0 +1,15 @@
+@import "~bootstrap/dist/css/bootstrap.css";
+body {
+  background-color: #eaeef5;
+}
+
+#container {
+  margin-bottom: 10px;
+}
+
+.table th,
+.table td {
+  padding: 0.75rem;
+  vertical-align: middle;
+  border-top: 1px solid #dee2e6;
+}
